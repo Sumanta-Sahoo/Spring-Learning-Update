@@ -1,0 +1,14 @@
+package projectApp.hibernate.app;
+
+public class MainApp {
+
+	public static void main(String[] args) {
+
+		// CONFIGURE FILE
+		
+		//PERSISTENCE OBJECT
+		
+		//PERSISTENCE OPERTION
+	}
+
+}

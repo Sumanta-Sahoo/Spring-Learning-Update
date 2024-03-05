@@ -1,0 +1,12 @@
+package com.hb.Controller;
+
+import org.hibernate.Session;
+
+public class InsertRecordApp {
+
+	public static void main(String[] args) {
+
+		Session session = null;
+	}
+
+}

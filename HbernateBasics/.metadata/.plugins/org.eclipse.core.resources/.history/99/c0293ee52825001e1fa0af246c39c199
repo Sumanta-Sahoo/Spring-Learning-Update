@@ -1,0 +1,24 @@
+package ai.merit.HB.HibernateUtil;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+
+import ai.merit.HB.model.HBStudnet;
+
+public class HibernateUtil {
+	public static SessionFactory sessionFactory = null;
+	public static Session session = null;
+	
+	static {
+		SessionFactory sessionFactory = new Configuration().configure().addAnnotatedClass(HBStudnet.class).buildSessionFactory();
+	}
+	
+	public static Session getSession() {
+		if(sessionFactory!=null) {
+			Session session = sessionFactory.openSession();
+		}
+		return session;
+	}
+	
+}

@@ -1,0 +1,10 @@
+package ai.merit.HB.HibernateUtil;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class HibernateUtil {
+	public static SessionFactory sessionFactory = null;
+	public static Session session = null;
+	
+}

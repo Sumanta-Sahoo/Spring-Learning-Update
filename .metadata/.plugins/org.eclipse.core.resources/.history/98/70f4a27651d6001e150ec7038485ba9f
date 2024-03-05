@@ -1,0 +1,13 @@
+package projectApp.hibernate.util;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+
+public class HibernateUtil {
+	
+	private HibernateUtil() {}
+	
+	private SessionFactory factory=null;
+	private Session session =null;
+
+}

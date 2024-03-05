@@ -1,0 +1,8 @@
+package hibernate.app.util;
+
+public class HibernateUtil {
+	
+	// Private Constructor so that only one object is created at a time
+	private HibernateUtil(){
+	}
+}

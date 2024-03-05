@@ -1,0 +1,48 @@
+package tms.com.Impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import tms.com.Payloads.UserDto;
+import tms.com.Repository.UserRepo;
+import tms.com.Service.UserService;
+
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	private UserRepo userRepo;
+
+	@Override
+	public UserDto createUser(UserDto userDto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDto updateUser(UserDto userDto, Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public UserDto getUserById(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDto> getAllUserList() {
+		
+		
+		
+		return null;
+	}
+
+	@Override
+	public void deleteUser(Integer userId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

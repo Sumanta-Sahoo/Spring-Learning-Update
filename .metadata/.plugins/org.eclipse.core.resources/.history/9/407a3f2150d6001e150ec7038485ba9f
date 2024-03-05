@@ -1,0 +1,15 @@
+package projectApp.hibernate.model;
+
+public class Employee {
+	
+	public Employee() {
+		System.out.println("Zero Constructor is internally used by hibernate");
+	}
+	
+	private Integer eID;
+	private String eName;
+	private String eAddr;
+	private String eRole;
+	
+	
+}

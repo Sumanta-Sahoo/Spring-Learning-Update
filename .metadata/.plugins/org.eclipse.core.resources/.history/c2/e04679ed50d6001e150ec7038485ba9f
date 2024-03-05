@@ -1,0 +1,9 @@
+package projectApp.hibernate.util;
+
+public class HibernateUtil {
+	
+	private HibernateUtil() {
+		
+	}
+
+}

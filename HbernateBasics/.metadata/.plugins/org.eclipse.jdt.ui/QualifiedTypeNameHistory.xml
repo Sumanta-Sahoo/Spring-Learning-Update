@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="ai.merit.util.HibernateUtil"/>
+    <fullyQualifiedTypeName name="javax.persistence.Column"/>
+    <fullyQualifiedTypeName name="ai.merit.Util.HibernateUtil"/>
+    <fullyQualifiedTypeName name="ai.merit.model.Student"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="javax.persistence.Table"/>
+    <fullyQualifiedTypeName name="org.hibernate.annotations.DynamicInsert"/>
+    <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+    <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="org.hibernate.SessionFactory"/>
+    <fullyQualifiedTypeName name="org.hibernate.cfg.Configuration"/>
+    <fullyQualifiedTypeName name="org.hibernate.Transaction"/>
+    <fullyQualifiedTypeName name="org.hibernate.Session"/>
+    <fullyQualifiedTypeName name="ai.merit.HB.HibernateUtil.HibernateUtil"/>
+    <fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
+    <fullyQualifiedTypeName name="ai.merit.HB.model.HBStudnet"/>
+</qualifiedTypeNameHistroy>

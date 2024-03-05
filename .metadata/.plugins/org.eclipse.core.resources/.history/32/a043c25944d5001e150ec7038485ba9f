@@ -1,0 +1,8 @@
+package hiberbate.app.Model;
+
+public class Student {
+	private Integer sID;
+	private String sName;
+	private String sAddr;
+	private Integer sAge;
+}

@@ -1,0 +1,67 @@
+package projectApp.hibernate.app;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import projectApp.hibernate.model.Employee;
+import projectApp.hibernate.util.HibernateUtil;
+
+public class GetApp {
+
+	public static void main(String[] args) {
+
+		Session session = null;
+		Transaction transaction = null;
+		boolean flag = false;
+
+		try {
+			session = HibernateUtil.getSession();
+			try {
+				if (session != null) {
+					transaction = session.beginTransaction();
+				}
+				if (transaction != null) {
+					Employee emp = new Employee();
+					emp.seteID(12);
+					emp.seteName("Sumanta");
+					emp.seteRole("SDE");
+
+					session.persist(emp);
+					flag = true;
+				}
+			} catch (HibernateException he) {
+				he.printStackTrace();
+			}
+		} catch (HibernateException he) {
+			he.printStackTrace();
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				if (flag == true) {
+					transaction.commit();
+					System.out.println("Persistence Operation Successfull");
+				} else {
+					transaction.rollback();
+					System.out.println("Persistence Operation Falied");
+				}
+			} catch (HibernateException he) {
+				he.printStackTrace();
+			} catch (Exception e) {
+				e.printStackTrace();
+			} finally {
+				try {
+					if(session!=null) {
+						HibernateUtil.closeSession(session);
+						HibernateUtil.closeSessionFactory();
+					}
+					
+				}catch(HibernateException he) {
+					he.printStackTrace();
+				}
+			}
+		}
+	}
+
+}

@@ -1,0 +1,17 @@
+package tms.com.Controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/users")
+public class UserController {
+
+	//POST Create User
+	
+	//PUT Update User
+	
+	//GET Traverse User
+	
+	//DELETE Delete User
+}

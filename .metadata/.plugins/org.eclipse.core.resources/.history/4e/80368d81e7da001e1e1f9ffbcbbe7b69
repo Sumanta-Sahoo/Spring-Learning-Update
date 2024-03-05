@@ -1,0 +1,9 @@
+package com.hb.Controller;
+
+public class InsertRecordApp {
+
+	public static void main(String[] args) {
+
+	}
+
+}

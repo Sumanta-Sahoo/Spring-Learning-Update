@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar&display=swap" rel="stylesheet">
+    <title>Menu</title>
+    <style>
+        html,
+        body {
+            background-color: #0073e6;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .menu_container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        .menu_list {
+            font-family: 'Sigmar', cursive;
+            color: aliceblue;
+        }
+
+        a {
+            font-size: 2rem;
+            color: aliceblue;
+            text-decoration: none;
+            letter-spacing: 0.1cm;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a.active {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu_container">
+        <ul>
+            <li class="menu_list"><a href="Insert.html" target="body">INSERT</a></li>
+            <li class="menu_list"><a href="Delete.html" target="body">DELETE</a></li>
+            <li class="menu_list"><a href="Update.html" target="body">UPDATE</a></li>
+            <li class="menu_list"><a href="Retrive.html" target="body">RETRIVE</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

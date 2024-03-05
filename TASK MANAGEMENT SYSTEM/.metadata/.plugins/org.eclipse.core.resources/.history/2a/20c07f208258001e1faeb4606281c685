@@ -1,0 +1,9 @@
+package tms.com.Payloads;
+
+public class UserDto {
+
+	private int userDtoID;
+	private String userDtoName;
+	private String userDtoEmail;
+	private String userDtoPassword;
+}

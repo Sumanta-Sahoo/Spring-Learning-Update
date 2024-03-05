@@ -1,0 +1,54 @@
+package tms.com.Impl;
+
+import java.util.List;
+
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import tms.com.Entities.User;
+import tms.com.Payloads.UserDto;
+import tms.com.Repository.UserRepo;
+import tms.com.Service.UserService;
+
+public class UserServiceImpl implements UserService {
+	
+	@Autowired
+	private UserRepo userRepo;
+	
+	private ModelMapper modelMapper;
+
+	@Override
+	public UserDto createUser(UserDto userDto) {
+		User user = this.modelMapper.map(userDto, User.class);
+		User savedUser = this.userRepo.save(user);
+		return this.modelMapper.map(savedUser, UserDto.class);
+	}
+
+	@Override
+	public UserDto updateUser(UserDto userDto, Integer userId) {
+		this.userRepo.findById(userId).orElseThrow((e-> new ResourceNotFoundException("User", "Id", userId)));
+		
+		return null;
+	}
+
+	@Override
+	public UserDto getUserById(Integer userId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<UserDto> getAllUserList() {
+		
+		
+		
+		return null;
+	}
+
+	@Override
+	public void deleteUser(Integer userId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

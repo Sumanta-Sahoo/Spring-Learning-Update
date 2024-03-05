@@ -1,0 +1,20 @@
+import org.hibernate.cfg.Configuration;
+
+import hiberbate.app.Model.Student;
+
+public class MyMainApp {
+
+	public static void main(String[] args) {
+		
+//		1.Activate HIBERNATE
+		Configuration config = new Configuration();
+		config.configure();
+	
+		
+//		2.Create Persistence Object
+		Student std = new Student();
+
+//		1.Perform persistence operation
+	}
+
+}

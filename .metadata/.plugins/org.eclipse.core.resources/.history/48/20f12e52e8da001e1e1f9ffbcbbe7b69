@@ -1,0 +1,30 @@
+package com.hb.Controller;
+
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import com.hb.Utils.HibernateUtil;
+
+public class InsertRecordApp {
+
+	public static void main(String[] args) {
+
+		Session session = null;
+		Transaction tarnsaction;
+		Boolean flag = false;
+		
+		try {
+			if(session == null) {
+				session = HibernateUtil.getSession();
+			}
+		}catch(HibernateException hbe) {
+			hbe.printStackTrace();
+		}catch(Exception e) {
+			e.printStackTrace();
+		}finally {
+			
+		}
+	}
+
+}

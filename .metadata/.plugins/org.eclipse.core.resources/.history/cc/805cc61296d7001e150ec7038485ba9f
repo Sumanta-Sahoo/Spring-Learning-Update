@@ -1,0 +1,28 @@
+package projectApp.hibernate.app;
+
+import java.io.IOException;
+
+import org.hibernate.HibernateException;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import projectApp.hibernate.model.Employee;
+import projectApp.hibernate.util.HibernateUtil;
+
+public class RecordSyncronization {
+
+	public static void main(String[] args) {
+
+		Session session = null;
+
+		try {
+			session = HibernateUtil.getSession();
+			if (session != null) {
+				Employee employee = session.get(Employee.class,12);
+			}	
+
+			
+		}
+	}
+}

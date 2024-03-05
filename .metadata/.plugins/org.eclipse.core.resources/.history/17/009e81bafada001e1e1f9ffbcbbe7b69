@@ -1,0 +1,8 @@
+package com.hb.Entity;
+
+public class ProjectInfoId {
+
+	private String projectId;
+	private String pId;
+	
+}

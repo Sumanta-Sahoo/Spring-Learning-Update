@@ -1,0 +1,17 @@
+INDEX VERSION 1.131+C:\Users\ASUS\Desktop\SPRING_Core\.metadata\.plugins\org.eclipse.jdt.core
+148132286.index
+178745075.index
+1398546710.index
+3707347162.index
+797023516.index
+2150749214.index
+2901692026.index
+21910464.index
+1215023711.index
+955564121.index
+1570981473.index
+2928222382.index
+3955432150.index
+2074508026.index
+2789723131.index
+2188558275.index

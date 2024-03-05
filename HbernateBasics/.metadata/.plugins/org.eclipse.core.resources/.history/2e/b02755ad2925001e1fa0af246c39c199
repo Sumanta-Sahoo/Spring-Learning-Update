@@ -1,0 +1,18 @@
+package ai.merit.HB.TestApp;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import ai.merit.HB.HibernateUtil.HibernateUtil;
+
+public class SaveApp {
+
+	public static void main(String[] args) {
+		Session session = null;
+		Transaction tarnsaction = null;
+		boolean flag = false;
+		
+		Session session = HibernateUtil.getSession();
+	}
+
+}

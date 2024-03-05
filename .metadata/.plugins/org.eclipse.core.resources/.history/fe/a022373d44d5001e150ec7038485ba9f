@@ -1,0 +1,5 @@
+package hiberbate.app.Model;
+
+public class Student {
+
+}

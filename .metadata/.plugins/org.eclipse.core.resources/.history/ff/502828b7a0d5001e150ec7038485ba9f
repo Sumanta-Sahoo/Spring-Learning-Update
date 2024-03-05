@@ -1,0 +1,44 @@
+import org.hibernate.HibernateException;
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+
+import hibernate.app.model.Student;
+import hibernate.app.util.HibernateUtil;
+
+public class SaveApp {
+
+	public static void main(String[] args) {
+		Session session = null;
+		Transaction transaction = null;
+		boolean flag = false;
+		
+		try {
+			session = HibernateUtil.getSession();
+			if(session!=null) {
+				transaction = session.beginTransaction();
+			}
+			if(transaction!=null) {
+				Student std = new Student();
+				std.setsName("Suraj");
+				std.setsID(2);
+				std.setsAddr("BBSR");
+				std.setsAge(25);
+				
+				session.persist(std);
+				flag = true;
+			}
+		}catch(HibernateException he){
+			he.printStackTrace();
+		}catch(Exception e){
+			e.printStackTrace();
+		}finally {
+			try {
+				
+			}catch(HibernateException he) {
+				he.printStackTrace();
+			}
+			
+		}
+	}
+
+}

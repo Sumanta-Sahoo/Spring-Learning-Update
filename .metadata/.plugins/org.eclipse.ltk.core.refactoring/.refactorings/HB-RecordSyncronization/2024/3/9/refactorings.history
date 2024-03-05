@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;projectApp.hibernate.app.DynamicUpdate&apos; to &apos;RecordSyncronization&apos;&#x0D;&#x0A;- Original project: &apos;HB-RecordSyncronization&apos;&#x0D;&#x0A;- Original element: &apos;projectApp.hibernate.app.DynamicUpdate&apos;&#x0D;&#x0A;- Renamed element: &apos;projectApp.hibernate.app.RecordSyncronization&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;DynamicUpdate&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;projectApp.hibernate.app{DynamicUpdate.java[DynamicUpdate" matchStrategy="1" name="RecordSyncronization" qualified="false" references="true" similarDeclarations="false" stamp="1709274616859" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,18 @@
+package hibernate.app.util;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
+
+public class HibernateUtil {
+	
+	private SessionFactory factory =null;
+	private Transaction transaction = null;
+	
+	// Private Constructor so that only one object is created at a time
+	private HibernateUtil(){
+	}
+	
+	static {
+		
+	}
+}
