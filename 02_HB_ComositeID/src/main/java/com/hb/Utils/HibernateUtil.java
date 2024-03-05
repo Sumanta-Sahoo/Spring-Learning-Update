@@ -1,10 +1,12 @@
 package com.hb.Utils;
 
 import org.hibernate.Session;
+
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
-import com.hb.Entity.Student;
+import com.hb.Entity.ProgrammerProjectInfo;
+
 
 public class HibernateUtil {
 
@@ -15,7 +17,7 @@ public class HibernateUtil {
 	public static Session session = null;
 
 	static {
-		factory = new Configuration().configure().addAnnotatedClass(Student.class).buildSessionFactory();
+		factory = new Configuration().configure().addAnnotatedClass(ProgrammerProjectInfo.class).buildSessionFactory();
 	}
 
 	public static Session getSession() {

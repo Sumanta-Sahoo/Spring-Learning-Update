@@ -1,37 +1,47 @@
 package com.hb.Controller;
 
 import org.hibernate.HibernateException;
+
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import com.hb.Entity.Student;
+import com.hb.Entity.ProgrammerProjectId;
+import com.hb.Entity.ProgrammerProjectInfo;
 import com.hb.Utils.HibernateUtil;
 
 public class InsertRecordApp {
 
+	@SuppressWarnings("deprecation")
 	public static void main(String[] args) {
 
 		Session session = null;
 		Transaction tarnsaction = null;
 		Boolean flag = false;
+		ProgrammerProjectId pk = null;
 		
 		try {
-			if(session == null) {
+			if(session==null) {
 				session = HibernateUtil.getSession();
 				if(session!=null) {
-					tarnsaction =session.beginTransaction();
+					tarnsaction = session.beginTransaction();
+				}
+				if(tarnsaction!=null) {
+					ProgrammerProjectId pid = new ProgrammerProjectId();
+					pid.setProID(102);
+					pid.setProjectID(502);
+					
+					ProgrammerProjectInfo pro = new ProgrammerProjectInfo();
+					pro.setpID(pid);
+					pro.setProgrammerName("Suraj Sahoo");
+					pro.setProgrammerDeptNo("Mechanical Head");
+					pro.setProgrammerProjectName("Service Management Engineer");
+					pro.setProgrammerRole("Mechanical Engineer");
+					
+					pk = (ProgrammerProjectId)session.save(pro);
+					flag = true;
 				}
 			}
-			if(tarnsaction!=null) {
-				Student std = new Student();
-				std.setStdName("Pritam");
-				std.setStdAddr("BER");
-				std.setStdContact("5486972145");
-				std.setStdRegNo("BB0108");
-				
-				session.persist(std);
-				flag = true;
-			}
+			
 		}catch(HibernateException hbe) {
 			hbe.printStackTrace();
 		}catch(Exception e) {
@@ -39,7 +49,7 @@ public class InsertRecordApp {
 		}finally {
 			if(flag) {
 				tarnsaction.commit();
-				System.out.println("Persistence Operation Succed");
+				System.out.println("Persistence Operation Succed having primary key :: " + pk);
 			}else {
 				tarnsaction.rollback();
 				System.out.println("Persistence Operation Failed");
